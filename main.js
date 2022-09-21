@@ -22,7 +22,7 @@ const max = settings.querySelector('#max');
 const trails = settings.querySelector('#trials');
 const mainGame = document.querySelector('.main-game');
 
-const guessed = [];
+let guessed = [];
 let randomNumber;
 let userCount;
 let userGuess, difference, text, hiText, userName, minVal, maxVal;
