@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Guess the Number</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://kit.fontawesome.com/fffd17f093.js" crossorigin="anonymous"></script>
+  <script src="main.js" defer></script>
+</head>
+
+<body>
+
+  <div id="content">
+    <header>
+      <div class="container">
+        <i class="fa-solid fa-brain"></i>
+        <h1>Guess the Number</h1>
+      </div>
+    </header>
+
+    <main>
+      <div class="container">
+        <div data-aos="zoom-in" class="welcome">
+          <h2 data-aos="fade-left">hello!</h2>
+          <p>what's your name?</p>
+          <form action="#" id="welcom">
+            <input type="text" name="name" id="name">
+            <button type="submit">proceed</button>
+          </form>
+        </div>
+
+        <div class="game-set">
+          <h2>game settings</h2>
+          <div class="settings">
+            <form action="#" id="settings">
+              <div>
+                <label for="min">enter minimum number</label>
+                <input type="number" name="min" id="min" placeholder="min: 0" min="0" required>
+              </div>
+              <div>
+                <label for="max">enter maximum number</label>
+                <input type="number" name="max" id="max" max="1000" placeholder="max: 1000" required>
+              </div>
+              <div>
+                <label for="trials">select number of guess trials</label>
+                <select name="trials" id="trials">
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                  <option value="6">6</option>
+                  <option value="7">7</option>
+                  <option value="8">8</option>
+                  <option value="9">9</option>
+                  <option selected value="10">10</option>
+                </select>
+              </div>
+              <div>
+                <button type="submit">proceed</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="main-game">
+          <div class="icon">
+            <i class="fa-solid fa-face-smile"></i>
+          </div>
+          <div class="form">
+            <form action="#" id="game">
+              <label for="guess">enter guess</label>
+              <input type="number" name="guess" id="guess">
+              <button type="submit">check</button>
+            </form>
+          </div>
+          <div class="screen">
+            <p class="prev">Previous Guesses: </p>
+            <p class="gameOver"></p>
+            <p class="hiLo"></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="container">
+        <p>Guess the Number game by Benedict &copy; 2022</p>
+      </div>
+    </footer>
+  </div>
+
+  <div id="welcome">
+    <div class="container">
+      <h2>welcome</h2>
+      <i class="fa-solid fa-user"></i>
+      <p></p>
+    </div>
+  </div>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>

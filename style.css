@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+
+* {
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg: rgba(230, 230, 230, 1);
+  --main-color: rgba(77, 92, 255, 1);
+  --box-shadow:  0 -5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+body {
+  background: var(--bg);
+  max-width: 68rem;
+  margin: auto;
+  overflow-x: hidden;
+}
+
+#content {
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  min-height: 100vh;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+}
+
+header {
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+header .container {
+  min-height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header h1 {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+header i {
+  margin-right: 10px;
+  font-size: 1.6rem;
+  color: var(--main-color);
+  background: rgba(255, 255, 255, 1);
+  border-radius: 50%;
+  padding: .5rem;
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.15);
+}
+
+main {
+  margin: 2rem 0;
+}
+
+main .container {
+  padding-top: 20%;
+  height: 100%;
+}
+
+main .welcome {
+  width: 80%;
+  max-width: 23rem;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: 0 -5px 10px 0 rgba(0, 0, 0, 0.15);
+  padding: 1rem;
+  border-radius: 6px;
+}
+
+.welcome h2 {
+  text-transform: capitalize;
+  text-align: center;
+  font-size: 1.6rem;
+  color: var(--main-color);
+}
+
+.welcome p {
+  font-size: 0.9rem;
+  color: #444;
+  margin: 0.5rem 0;
+}
+
+.welcome form {
+  max-width: 20rem;
+  margin: auto;
+}
+
+form input {
+  width: 100%;
+  height: 2rem;
+  appearance: none;
+  border: 0;
+  padding: 0 1rem;
+  font-size: 1rem;
+  border-bottom: 2px solid #bbb;
+  display: block;
+  font-weight: 460;
+  background: inherit;
+}
+
+
+form input:focus,
+form input:valid {
+  outline: none;
+  border-bottom-color: var(--main-color);
+}
+
+form button,
+.no-btn, .yes-btn{
+  margin-top: 10px;
+  width: 5rem;
+  font-size: 0.95rem;
+  border: 1px solid transparent;
+  color: #fff;
+  border-radius: 3px;
+  background: var(--main-color);
+  padding: 3px 0;
+}
+
+
+footer {
+  background: rgba(0, 0, 0, 0.7);
+}
+
+footer .container {
+  min-height: 4rem;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 1rem;
+}
+
+#welcome {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  background: rgba(0, 0, 0, 0.7);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  display: none;
+}
+
+#welcome .container {
+  text-align: center;
+  max-width: 20rem;
+  margin: auto;
+  background: rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+}
+
+#welcome h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#welcome i {
+  font-size: 3rem;
+  margin-bottom: 5px;
+
+}
+
+#welcome p {
+  font-size: 1.3rem;
+  font-weight: 500;
+  margin-bottom: 5px;
+}
+
+.game-set {
+  width: 80%;
+  max-width: 23rem;
+  margin: auto;
+  background: rgba(255, 255, 255, 0.8);
+  box-shadow: var(--box-shadow);
+  padding: 1rem;
+  border-radius: 6px;
+  display: none;
+}
+
+.game-set h2 {
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid #bbb;
+}
+
+
+.game-set form {
+  margin-top: 1rem;
+}
+
+
+.game-set form label {
+  display: block;
+  text-transform: capitalize;
+  color: #333;
+  font-size: 0.9rem;
+  margin-bottom: 5px;
+  font-weight: 450;
+}
+
+.game-set form > div {
+  margin: 1rem 0;
+  
+}
+
+.game-set select {
+  appearance: none;
+  color: #111;
+  text-align: center;
+  padding: 3px 0;
+  width: 5rem;
+  border-radius: 3px;
+  font-size: 0.96rem;
+  border: 1px solid transparent;
+}
+
+.game-set select:focus {
+  outline-color: var(--main-color);
+}
+
+.game-set button {
+  width: 100%;
+}
+
+main .main-game {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 1rem;
+  width: 80%;
+  max-width: 23rem;
+  margin: auto;
+  border-radius: 6px;
+  display: none;
+}
+
+.main-game .icon {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+
+.main-game .icon i {
+  font-size: 4rem;
+  color: var(--main-color);
+}
+
+
+.main-game form {
+  margin: 1.5rem 0 1rem;
+}
+
+.main-game form label {
+  font-size: 0.9rem;
+  color: #222;
+  text-transform: capitalize;
+}
+
+.msg-box {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background: #fff;
+  width: 13rem;
+  margin: auto;
+  border-radius: .4rem;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.15);
+  backdrop-filter: blur(5px);
+  padding: 1rem;
+  animation: display .65s linear 1;
+}
+
+@keyframes display {
+  from {
+    opacity: 0.8;
+    top: 0;
+  }
+  to {
+    opacity: 1;
+    top: 15%;
+  }
+}
+
+.msg-box .clear-btn {
+  position: absolute;
+  top: .3rem;
+  right: .3rem;
+  border: 1px solid transparent;
+  color: #fff;
+  border-radius: .3rem;
+  background: red;
+  padding: .1rem;
+  height: 1.3rem;
+  width: 1.3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.msg-box .msg-text {
+  font-size: .9rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.button-div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2%;
+}
