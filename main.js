@@ -144,7 +144,9 @@ function resetGame() {
   hiLo.textContent = ``;
   gameOver.textContent = 'NEW GAME!!';
   guessed = [];
-  randomNumber = random(min.value, max.value)
+  minVal = Number(min.value);
+  maxVal = Number(max.value);
+  randomNumber = random(minVal, maxVal)
   console.log(randomNumber);
 }
 
