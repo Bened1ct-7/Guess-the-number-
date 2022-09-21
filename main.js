@@ -143,6 +143,7 @@ function resetGame() {
   userCount = trials.value;
   hiLo.textContent = ``;
   gameOver.textContent = 'NEW GAME!!';
+  guessed = [];
   randomNumber = random(min.value, max.value)
   console.log(randomNumber);
 }
